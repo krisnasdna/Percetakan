@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Percetakan
 {
-    public partial class Form1 : Form
+    public partial class Kertas : Form
     {
-        public Form1()
+        public Kertas()
         {
             InitializeComponent();
         }
