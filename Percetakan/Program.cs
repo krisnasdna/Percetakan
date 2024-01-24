@@ -16,7 +16,7 @@ namespace Percetakan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Transaksi());
+            Application.Run(new Kertas());
         }
     }
 }
