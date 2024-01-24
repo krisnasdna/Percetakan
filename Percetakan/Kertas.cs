@@ -66,7 +66,7 @@ namespace Percetakan
         {
             if (e.ColumnIndex == 3) //klik edit
             { 
-                KertasCreate frm = new KertasCreate();
+            KertasCreate frm = new KertasCreate();
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.Text = "Insert data kertas";
             frm.id_kertas = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());

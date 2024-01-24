@@ -13,6 +13,8 @@ namespace Percetakan
 {
     public partial class Transaksi : Form
     {
+        public string nama {  get; set; }
+        public string no_telp { get; set; }
         public Transaksi()
         {
             InitializeComponent();
@@ -36,6 +38,8 @@ namespace Percetakan
         }
         void Tanggal()
         {
+            lbNama.Text = nama;
+            lbTelp.Text = no_telp;
             tbTanggal.Text = DateTime.Now.ToString("yyyy-MM-dd");
         }
         public void LoadDataKategori()
@@ -131,7 +135,7 @@ namespace Percetakan
             Koneksi.buka();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Koneksi.sqlConn;
-            cmd.CommandText = "INSERT INTO transaksi (id_kategori, tgl_transaksi, jumlah, total_harga, id_kertas) VALUES (@pIdKategori, @pTglTransaksi, @pJumlah, @pTotalHarga, @pIdKertas)";
+            cmd.CommandText = "Insert into transaksi (id_kategori, tgl_transaksi, jumlah, total_harga, id_kertas,nama_pelanggan,no_telp) VALUES (@pIdKategori, @pTglTransaksi, @pJumlah, @pTotalHarga, @pIdKertas, @pPelanggan, @pNo_telp)";
             string[] vSplitKat = cbKategori.Text.Split('-');
             string id_kategori = vSplitKat[0];
 
@@ -143,7 +147,9 @@ namespace Percetakan
             cmd.Parameters.AddWithValue("pJumlah", numericJumlah.Value);
             cmd.Parameters.AddWithValue("pTotalHarga", tbHarga.Text);
             cmd.Parameters.AddWithValue("pIdKertas", id_kertas);
-          
+            cmd.Parameters.AddWithValue("pPelanggan", lbNama.Text);
+            cmd.Parameters.AddWithValue("pNo_telp", lbTelp.Text);
+
             cmd.ExecuteNonQuery(); 
 
            
