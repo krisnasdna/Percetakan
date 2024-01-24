@@ -29,18 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbKategori = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbKertas = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.numericJumlah = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbHarga = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tbKertas = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.tbKategori = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbTanggal = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numericJumlah)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,120 +55,151 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Kategori";
             // 
-            // comboBox1
+            // cbKategori
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(248, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(294, 24);
-            this.comboBox1.TabIndex = 1;
+            this.cbKategori.FormattingEnabled = true;
+            this.cbKategori.Location = new System.Drawing.Point(248, 56);
+            this.cbKategori.Name = "cbKategori";
+            this.cbKategori.Size = new System.Drawing.Size(294, 24);
+            this.cbKategori.TabIndex = 1;
+            this.cbKategori.SelectedIndexChanged += new System.EventHandler(this.cbKategori_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 94);
+            this.label2.Location = new System.Drawing.Point(51, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Pilihan Kertas";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // comboBox2
+            // cbKertas
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(248, 86);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(294, 24);
-            this.comboBox2.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 233);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Antrian";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(248, 230);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(48, 22);
-            this.textBox1.TabIndex = 5;
+            this.cbKertas.FormattingEnabled = true;
+            this.cbKertas.Location = new System.Drawing.Point(248, 119);
+            this.cbKertas.Name = "cbKertas";
+            this.cbKertas.Size = new System.Drawing.Size(294, 24);
+            this.cbKertas.TabIndex = 3;
+            this.cbKertas.SelectedIndexChanged += new System.EventHandler(this.cbKertas_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 158);
+            this.label4.Location = new System.Drawing.Point(51, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "Jumlah";
             // 
-            // numericUpDown1
+            // numericJumlah
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(248, 152);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 22);
-            this.numericUpDown1.TabIndex = 7;
+            this.numericJumlah.Location = new System.Drawing.Point(248, 225);
+            this.numericJumlah.Name = "numericJumlah";
+            this.numericJumlah.Size = new System.Drawing.Size(120, 22);
+            this.numericJumlah.TabIndex = 7;
+            this.numericJumlah.ValueChanged += new System.EventHandler(this.numericJumlah_ValueChanged);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 180);
+            this.label5.Location = new System.Drawing.Point(51, 253);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "Total Harga";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox2
+            // tbHarga
             // 
-            this.textBox2.Location = new System.Drawing.Point(248, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 9;
+            this.tbHarga.Location = new System.Drawing.Point(248, 253);
+            this.tbHarga.Name = "tbHarga";
+            this.tbHarga.Size = new System.Drawing.Size(120, 22);
+            this.tbHarga.TabIndex = 9;
+            this.tbHarga.TextChanged += new System.EventHandler(this.tbHarga_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(192, 342);
+            this.button1.Location = new System.Drawing.Point(235, 339);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 36);
+            this.button1.Size = new System.Drawing.Size(105, 44);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Ok";
+            this.button1.Text = "Simpan";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // label3
             // 
-            this.button2.Location = new System.Drawing.Point(283, 342);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 36);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Cancel";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(51, 155);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 16);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Harga Kertas";
+            // 
+            // tbKertas
+            // 
+            this.tbKertas.Location = new System.Drawing.Point(248, 150);
+            this.tbKertas.Name = "tbKertas";
+            this.tbKertas.Size = new System.Drawing.Size(294, 22);
+            this.tbKertas.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(51, 95);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Harga Kategori";
+            // 
+            // tbKategori
+            // 
+            this.tbKategori.Location = new System.Drawing.Point(248, 88);
+            this.tbKategori.Name = "tbKategori";
+            this.tbKategori.Size = new System.Drawing.Size(294, 22);
+            this.tbKategori.TabIndex = 15;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(51, 184);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(121, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Tanggal Transaksi";
+            // 
+            // tbTanggal
+            // 
+            this.tbTanggal.Location = new System.Drawing.Point(248, 179);
+            this.tbTanggal.Name = "tbTanggal";
+            this.tbTanggal.Size = new System.Drawing.Size(120, 22);
+            this.tbTanggal.TabIndex = 17;
             // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbTanggal);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbKategori);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.tbKertas);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tbHarga);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.numericJumlah);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.cbKertas);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbKategori);
             this.Controls.Add(this.label1);
             this.Name = "Transaksi";
             this.Text = "Transaksi";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericJumlah)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,17 +208,20 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbKategori;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cbKertas;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numericJumlah;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbHarga;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tbKertas;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbKategori;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbTanggal;
     }
 }
 
