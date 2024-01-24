@@ -60,8 +60,9 @@ namespace Percetakan
                     MessageBox.Show("login berhasil");
 
                     //load next page
-                    Kategori form2 = new Kategori();
-                    form2.Show();
+                    HomeAdmin frm = new HomeAdmin();
+                    frm.WindowState = FormWindowState.Maximized;
+                    frm.Show();
                     this.Hide();
                 }
                 else

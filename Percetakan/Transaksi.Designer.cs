@@ -43,13 +43,17 @@
             this.tbKategori = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.tbTanggal = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbNama = new System.Windows.Forms.Label();
+            this.lbTelp = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericJumlah)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 64);
+            this.label1.Location = new System.Drawing.Point(39, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 0;
@@ -58,7 +62,7 @@
             // cbKategori
             // 
             this.cbKategori.FormattingEnabled = true;
-            this.cbKategori.Location = new System.Drawing.Point(248, 56);
+            this.cbKategori.Location = new System.Drawing.Point(236, 78);
             this.cbKategori.Name = "cbKategori";
             this.cbKategori.Size = new System.Drawing.Size(294, 24);
             this.cbKategori.TabIndex = 1;
@@ -67,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 127);
+            this.label2.Location = new System.Drawing.Point(39, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 16);
             this.label2.TabIndex = 2;
@@ -77,7 +81,7 @@
             // cbKertas
             // 
             this.cbKertas.FormattingEnabled = true;
-            this.cbKertas.Location = new System.Drawing.Point(248, 119);
+            this.cbKertas.Location = new System.Drawing.Point(236, 141);
             this.cbKertas.Name = "cbKertas";
             this.cbKertas.Size = new System.Drawing.Size(294, 24);
             this.cbKertas.TabIndex = 3;
@@ -86,7 +90,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(51, 231);
+            this.label4.Location = new System.Drawing.Point(39, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 16);
             this.label4.TabIndex = 6;
@@ -94,7 +98,7 @@
             // 
             // numericJumlah
             // 
-            this.numericJumlah.Location = new System.Drawing.Point(248, 225);
+            this.numericJumlah.Location = new System.Drawing.Point(236, 247);
             this.numericJumlah.Name = "numericJumlah";
             this.numericJumlah.Size = new System.Drawing.Size(120, 22);
             this.numericJumlah.TabIndex = 7;
@@ -103,7 +107,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(51, 253);
+            this.label5.Location = new System.Drawing.Point(39, 275);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 16);
             this.label5.TabIndex = 8;
@@ -112,7 +116,7 @@
             // 
             // tbHarga
             // 
-            this.tbHarga.Location = new System.Drawing.Point(248, 253);
+            this.tbHarga.Location = new System.Drawing.Point(236, 275);
             this.tbHarga.Name = "tbHarga";
             this.tbHarga.Size = new System.Drawing.Size(120, 22);
             this.tbHarga.TabIndex = 9;
@@ -131,7 +135,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 155);
+            this.label3.Location = new System.Drawing.Point(39, 177);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 16);
             this.label3.TabIndex = 12;
@@ -139,7 +143,7 @@
             // 
             // tbKertas
             // 
-            this.tbKertas.Location = new System.Drawing.Point(248, 150);
+            this.tbKertas.Location = new System.Drawing.Point(236, 172);
             this.tbKertas.Name = "tbKertas";
             this.tbKertas.Size = new System.Drawing.Size(294, 22);
             this.tbKertas.TabIndex = 13;
@@ -147,7 +151,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 95);
+            this.label6.Location = new System.Drawing.Point(39, 117);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 16);
             this.label6.TabIndex = 14;
@@ -155,7 +159,7 @@
             // 
             // tbKategori
             // 
-            this.tbKategori.Location = new System.Drawing.Point(248, 88);
+            this.tbKategori.Location = new System.Drawing.Point(236, 110);
             this.tbKategori.Name = "tbKategori";
             this.tbKategori.Size = new System.Drawing.Size(294, 22);
             this.tbKategori.TabIndex = 15;
@@ -163,7 +167,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(51, 184);
+            this.label7.Location = new System.Drawing.Point(39, 206);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(121, 16);
             this.label7.TabIndex = 16;
@@ -171,16 +175,56 @@
             // 
             // tbTanggal
             // 
-            this.tbTanggal.Location = new System.Drawing.Point(248, 179);
+            this.tbTanggal.Location = new System.Drawing.Point(236, 201);
             this.tbTanggal.Name = "tbTanggal";
             this.tbTanggal.Size = new System.Drawing.Size(120, 22);
             this.tbTanggal.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(42, 48);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Nama";
+            // 
+            // lbNama
+            // 
+            this.lbNama.AutoSize = true;
+            this.lbNama.Location = new System.Drawing.Point(233, 48);
+            this.lbNama.Name = "lbNama";
+            this.lbNama.Size = new System.Drawing.Size(55, 16);
+            this.lbNama.TabIndex = 19;
+            this.lbNama.Text = "lbNama";
+            // 
+            // lbTelp
+            // 
+            this.lbTelp.AutoSize = true;
+            this.lbTelp.Location = new System.Drawing.Point(486, 48);
+            this.lbTelp.Name = "lbTelp";
+            this.lbTelp.Size = new System.Drawing.Size(44, 16);
+            this.lbTelp.TabIndex = 21;
+            this.lbTelp.Text = "label9";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(404, 48);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(58, 16);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Telepon";
             // 
             // Transaksi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 450);
+            this.Controls.Add(this.lbTelp);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbNama);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.tbTanggal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tbKategori);
@@ -222,6 +266,10 @@
         private System.Windows.Forms.TextBox tbKategori;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbTanggal;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Label lbNama;
+        public System.Windows.Forms.Label lbTelp;
+        private System.Windows.Forms.Label label10;
     }
 }
 

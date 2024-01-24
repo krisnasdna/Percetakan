@@ -20,23 +20,19 @@ namespace Percetakan
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Koneksi.buka();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = Koneksi.sqlConn;
-            cmd.CommandText = "INSERT INTO pelanggan ( nama, no_telp) VALUES ( @pNama, @pNoTelp)";
+            Transaksi data = new Transaksi();
+            data.nama = tbNama.Text;
+            data.no_telp = tbTelp.Text;
+            data.WindowState = FormWindowState.Maximized;
+            data.Show();
+            
+        }
 
-            cmd.Parameters.AddWithValue("pNama", tbNama.Text);
-            cmd.Parameters.AddWithValue("pNoTelp", tbTelp.Text);
-
-            cmd.ExecuteNonQuery();
-
-            Transaksi frm = new Transaksi();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            login frm = new login();
             frm.WindowState = FormWindowState.Maximized;
-            
             frm.Show();
-
-            Koneksi.tutup();
-            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
