@@ -34,5 +34,10 @@ namespace Percetakan
             frm.WindowState = FormWindowState.Maximized;
             frm.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
