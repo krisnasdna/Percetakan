@@ -8,15 +8,13 @@ namespace Percetakan
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kertas());
+            Application.Run(new Home());
         }
     }
 }
