@@ -38,5 +38,10 @@ namespace Percetakan
             Koneksi.tutup();
             
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

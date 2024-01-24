@@ -139,5 +139,17 @@
   <ItemGroup>
     <None Include="Resources\printer.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WADUH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-business-office-cartoon-printer-image_1231097.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\361211.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
