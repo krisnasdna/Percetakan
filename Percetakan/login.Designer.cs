@@ -31,11 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtun = new System.Windows.Forms.TextBox();
             this.txtpw = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btlogin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btclear = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,14 +61,6 @@
             this.txtpw.Name = "txtpw";
             this.txtpw.Size = new System.Drawing.Size(191, 22);
             this.txtpw.TabIndex = 3;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(346, 107);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // btlogin
             // 
@@ -110,17 +102,28 @@
             this.btclear.UseVisualStyleBackColor = true;
             this.btclear.Click += new System.EventHandler(this.btclear_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Percetakan.Properties.Resources._36121;
+            this.pictureBox1.Location = new System.Drawing.Point(325, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(134, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btclear);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btlogin);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtpw);
             this.Controls.Add(this.txtun);
             this.Controls.Add(this.label1);
@@ -138,10 +141,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtun;
         private System.Windows.Forms.TextBox txtpw;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btlogin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btclear;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
