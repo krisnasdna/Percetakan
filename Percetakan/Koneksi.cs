@@ -14,7 +14,8 @@ namespace Percetakan
 
         public static void buka()
         {
-            connString = @"data source=(localdb)\percetakan; initial catalog=SEWA_MOBIL; integrated security = true";
+            connString = @"data source=(localdb)\percetakan; initial catalog=percetakan; integrated security = true";
+
             sqlConn = new SqlConnection(connString);
             if (sqlConn.State == System.Data.ConnectionState.Closed)
             {
