@@ -40,21 +40,19 @@ namespace Percetakan
         }
         public void LoadDataKategori()
         {
-            //buka koneksi
+            
             Koneksi.buka();
 
-            //buka sqlcommand
+           
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Koneksi.sqlConn;
             cmd.CommandText = "SELECT * FROM kategori ";
 
 
-            //eksekusi sqlcommand, tampung hasilnya
-            //menggunakan sqlDataReader
+            
             SqlDataReader rd = cmd.ExecuteReader();
 
-            //menggunakan perulangan while, masukan satu per satu
-            //datanya kedalam cmbMobil
+            
             while (rd.Read())
             {
                 string vID = rd["id_kategori"].ToString();
@@ -68,21 +66,18 @@ namespace Percetakan
         }
         public void LoadDataKertas()
         {
-            //buka koneksi
             Koneksi.buka();
 
-            //buka sqlcommand
+           
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = Koneksi.sqlConn;
             cmd.CommandText = "SELECT * FROM kertas ";
 
 
-            //eksekusi sqlcommand, tampung hasilnya
-            //menggunakan sqlDataReader
+            
             SqlDataReader rd = cmd.ExecuteReader();
 
-            //menggunakan perulangan while, masukan satu per satu
-            //datanya kedalam cmbMobil
+            
             while (rd.Read())
             {
                 string vID = rd["id_kertas"].ToString();
@@ -149,7 +144,7 @@ namespace Percetakan
             cmd.Parameters.AddWithValue("pTotalHarga", tbHarga.Text);
             cmd.Parameters.AddWithValue("pIdKertas", id_kertas);
           
-            cmd.ExecuteNonQuery(); //eksekusi perintah insert
+            cmd.ExecuteNonQuery(); 
 
            
             Koneksi.tutup();
