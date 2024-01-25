@@ -165,7 +165,10 @@ namespace Percetakan
             tbKertas.Text = "";
             tbTanggal.Text = "";
             numericJumlah.Value = 0;
-            
+
+            Home frm = new Home();
+            frm.Show();
+            this.Hide();
         }
     }
 }

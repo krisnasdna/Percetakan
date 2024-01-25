@@ -25,14 +25,15 @@ namespace Percetakan
             data.no_telp = tbTelp.Text;
             data.WindowState = FormWindowState.Maximized;
             data.Show();
-            
+            this.Hide();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             login frm = new login();
-            frm.WindowState = FormWindowState.Maximized;
             frm.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
